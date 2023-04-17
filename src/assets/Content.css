@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper-main {
+     
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-product{
+    border: 1px solid rgba(0, 0, 0, 0.073);
+    box-shadow: 2px 3px 3px grey;
+    width: 418px;
+    height: 468px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.single-wrapper {
+    
+    width: 100%;
+    height: 100vh;
+    
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    padding: 8px;
+}
+
+.single-prodinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-prod-img {
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+}
+
+.description-info {
+    inline-size: 65%;
+}
+
+.köp-mig {
+    
+    max-width: 200px;
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 164, 79);
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    outline: 0px;
+    padding: 5px 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-radius: 6px;
+    border-color: rgba(27, 31, 35, 0.15);
+    transition: color 0.2s cubic-bezier(0.3, 0, 0.5, 1) 0s, background-color, border-color;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-prod {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.img-prod:hover {
+    cursor: pointer;
+}
+
+
+.box-img {
+    width: 100%;
+    height: 70%;
+    padding: 8px;
+    
+}
+
+.prod-info > p, h3 {
+    text-align: center;
+}
+
+.prod-info > h3:hover {
+    cursor: pointer;
+}
+
+.discount {
+    color: red;
+}
+
+.Rea {
+    background-color: rgb(84, 199, 84);
+    margin: 10px;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.search-bar {
+    border: 2px solid rgba(104, 104, 104, 0.486);
+    outline: none;
+    padding: 10px;
+    border-radius: 52px;
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    margin-top: 10px;
+    font-size: 120%;
+    
+}
