@@ -21,7 +21,6 @@ export default function Content() {
     const deboucedChangeHandler = useCallback(
         debounce(changeHandler, 500)
     , []);
-    console.log("hello")
     const filteredAPI = products.filter((product) => product.id !== null)
     const navigate = useNavigate();
     const navigateToProduct = (id) => {
