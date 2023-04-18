@@ -1,5 +1,6 @@
-import { React, useEffect, useState} from "react"
+import { React, useCallback, useEffect, useState} from "react"
 import { useNavigate } from "react-router-dom";
+import  debounce  from "lodash.debounce";
 import "./Content.css"
 
 export default function Content() {
@@ -12,6 +13,14 @@ export default function Content() {
         .then(data => setProducts(data))
         
     }, [])
+
+    const changeHandler = event => {
+        setSearchTerm(event.target.value)
+    };
+
+    const deboucedChangeHandler = useCallback(
+        debounce(changeHandler, 500)
+    , []);
     
     const filteredAPI = products.filter((product) => product.id !== null)
     const navigate = useNavigate();
@@ -23,7 +32,7 @@ export default function Content() {
     return (
         
         <div className="wrapper-main">
-            <input className="search-bar" type="text" placeholder="Search for product..." onChange={(event) => setSearchTerm(event.target.value)} />
+            <input className="search-bar" type="text" placeholder="Search for product..." onChange={deboucedChangeHandler} />
             
             <div className="card-wrapper">
             {
